@@ -4,11 +4,17 @@
       <a routerLink="/">Kiwi Social</a>
     </div>
     <div class="top-bar-buttons">
-      <button class="nav-link top-bar-button" type="button"><mat-icon>search</mat-icon></button>
-      <a routerLink="/new-post" class="nav-link top-bar-button"><mat-icon>add</mat-icon>New Post</a>
-      @if(authService.getCurrentUser()){
-        <a routerLink="/dashboard" class="nav-link top-bar-button"><mat-icon>person</mat-icon></a>
-      } @else{
+      <button mat-button class="nav-link top-bar-button" type="button">
+        <mat-icon>search</mat-icon>
+      </button>
+      <a routerLink="/new-post" class="nav-link top-bar-button">
+        <mat-icon>add</mat-icon>
+        New Post</a>
+      @if (authService.getCurrentUser()) {
+        <a routerLink="/dashboard" class="nav-link top-bar-button">
+          <mat-icon>person</mat-icon>
+        </a>
+      } @else {
         <a routerLink="/login" class="nav-link top-bar-button">Log in</a>
       }
     </div>
@@ -17,8 +23,12 @@
     class="side-bar"
   >
     <div class="nav-links">
-      <a routerLink="" class="nav-link"><mat-icon>home</mat-icon><span class="sidebar-link-text">Home</span></a>
-      <a routerLink="chat" class="nav-link"><mat-icon>chat_bubble</mat-icon><span class="sidebar-link-text">Chat</span></a>
+      <a routerLink="" class="nav-link">
+        <mat-icon>home</mat-icon>
+        <span class="sidebar-link-text">Home</span></a>
+      <a routerLink="chat" class="nav-link">
+        <mat-icon>chat_bubble</mat-icon>
+        <span class="sidebar-link-text">Chat</span></a>
     </div>
   </div>
 </nav>

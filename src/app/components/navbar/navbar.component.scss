@@ -41,9 +41,8 @@
 
 
     .top-bar-button{
-      border: solid white 0.1rem;
       border-radius: .5rem;
-      height: 2rem;
+      height: 1.4rem;
       color: white;
       background-color: transparent;
     }
@@ -65,18 +64,18 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      gap: 2rem;
+      gap: 1rem;
     }
   }
 
   .nav-link {
     display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem .5rem;
     color: white;
     cursor: pointer;
     align-items: center;
     gap: 0.5rem;
+    margin: auto;
 
     mat-icon{
       font-size: 1.5rem;
